@@ -3,9 +3,9 @@ package handler
 import (
 	"net/http"
 	"new-api/common"
-	"new-api/middleware"
-	"new-api/model"
-	"new-api/router"
+    "new-api/middleware"
+    "new-api/model"
+    "new-api/router"
 	"github.com/gin-gonic/gin"
 )
 
