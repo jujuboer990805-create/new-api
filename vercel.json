@@ -19,7 +19,7 @@
       "destination": "api/index.go"
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!api/).*)",
       "destination": "web/$1"
     }
   ]
