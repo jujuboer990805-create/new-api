@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "main.go",
+      "use": "@vercel/go",
+      "config": {
+        "installCommand": "go mod download",
+        "buildCommand": "cd web && npm install && npm run build && cd .. && go build -o api"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "main.go"
+    }
+  ]
+}
