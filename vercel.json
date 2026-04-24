@@ -3,11 +3,7 @@
   "builds": [
     {
       "src": "main.go",
-      "use": "@vercel/go",
-      "config": {
-        "installCommand": "go mod download",
-        "buildCommand": "cd web && npm install && npm run build && cd .. && go build -o api"
-      }
+      "use": "@vercel/go"
     }
   ],
   "routes": [
